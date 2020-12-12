@@ -20,7 +20,7 @@ export default class AddNote extends Component {
 			folder_id: e.target["note-folder-id"].value,
 			modified: new Date().toISOString(),
 		};
-		fetch(`${config.API_ENDPOINT}api/notes`, {
+		fetch(`${config.API_ENDPOINT}/notes`, {
 			method: "POST",
 			headers: {
 				"content-type": "application/json",
