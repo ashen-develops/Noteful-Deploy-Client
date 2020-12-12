@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NotefulForm from "../NotefulForm/NotefulForm";
+import NotefulForm from "../NotefulForm/NotefulForm.js";
 import ApiContext from "../ApiContext";
 import config from "../config";
 import "./AddNote.css";
