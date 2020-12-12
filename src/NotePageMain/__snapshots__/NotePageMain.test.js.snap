@@ -4,9 +4,7 @@ exports[`NotePageMain component renders a .NotePageMain by default 1`] = `
 <section
   className="NotePageMain"
 >
-  <Note
-    onDeleteNote={[Function]}
-  />
+  <Note />
   <div
     className="NotePageMain__content"
   >

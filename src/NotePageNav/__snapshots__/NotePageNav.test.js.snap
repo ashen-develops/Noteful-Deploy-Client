@@ -24,7 +24,6 @@ exports[`NotePageNav component renders a .NotePageNav by default 1`] = `
       rotation={null}
       size={null}
       spin={false}
-      swapOpacity={false}
       symbol={false}
       title=""
       transform={null}

@@ -12,7 +12,6 @@ exports[`NoteListNav component renders a .NoteListNav by default 1`] = `
   >
     <NavCircleButton
       className="NoteListNav__add-folder-button"
-      onClick={[Function]}
       tag={[Function]}
       to="/add-folder"
       type="button"
@@ -31,7 +30,6 @@ exports[`NoteListNav component renders a .NoteListNav by default 1`] = `
         rotation={null}
         size={null}
         spin={false}
-        swapOpacity={false}
         symbol={false}
         title=""
         transform={null}
