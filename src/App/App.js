@@ -19,7 +19,11 @@ class App extends Component {
 
 	componentDidMount() {
 		Promise.all([
-			fetch(`${config.API_ENDPOINT}/notes`),
+			fetch(`${config.API_ENDPOINT}/notes`, {
+				headers: {
+					Authorization: `Bearer ${config.API_TOKEN}`
+				}
+			}),
 			fetch(`${config.API_ENDPOINT}/folders`),
 		])
 			.then(([notesRes, foldersRes]) => {
