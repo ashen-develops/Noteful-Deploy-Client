@@ -3,6 +3,7 @@ import NotefulForm from "../NotefulForm/NotefulForm"
 import ApiContext from "../ApiContext";
 import config from "../config";
 import "./AddNote.css";
+import { faWindowRestore } from "@fortawesome/free-solid-svg-icons";
 
 export default class AddNote extends Component {
 	static defaultProps = {
@@ -33,7 +34,7 @@ export default class AddNote extends Component {
 			})
 			.then((note) => {
 				this.context.addNote(note);
-				this.props.history.push(`/folder/${note.id}`);
+				window.location = `/folder/${note.folder_id}`;
 			})
 			.catch((error) => {
 				console.error({ error });
